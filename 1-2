@@ -1,0 +1,15 @@
+# task1
+
+my_list = [1, True, 1.12, "task", {1, 2, 3, 4}]
+for el in my_list:
+    print(type(el))
+
+# task2
+
+list_user = list(input('Введите список элементов:'))
+j = 0
+for i in range(int(len(list_user)/2)):
+    list_user[j], list_user[j+1] = list_user[j+1], list_user[j]
+    j += 2
+
+print(list_user)
