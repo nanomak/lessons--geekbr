@@ -1,0 +1,9 @@
+def div_fun(var_1, var_2):
+    if var_1 != 0 and var_2 != 0:
+        return var_1 / var_2
+    else:
+        return None
+
+
+print(div_fun(5, 3))
+print(div_fun(0, 5))
