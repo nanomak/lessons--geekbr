@@ -1,0 +1,7 @@
+def user_inform(name, surname, year_born, town, email_1, phone_number):
+    print(f"Имя-{name}; Фамилия-{surname}; Год рождения-{year_born}; Город проживания-{town};"
+          f" email-{email_1}; Телефон-{phone_number}")
+
+
+user_inform(input('Ведите имя:'), input('Введите фамилию:'), input('Год рождения:'),
+            input('Город проживания:'), input('Введите email:'), input('Номер телефона:'))

@@ -1,0 +1,17 @@
+def my_func(x, y):
+    print(x ** y)
+
+
+my_func(float(input('Введите число:')), int(input('Введите число:')))
+
+
+def my_fun(a,b):
+    result = 1
+    for i in range(abs(b)):
+        result *= a
+    if b >= 0:
+        return result
+    else:
+        return 1 / result
+
+print(my_fun(float(input('Введите число:')), int(input('Введите число:'))))
