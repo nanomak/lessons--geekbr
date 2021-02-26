@@ -1,0 +1,11 @@
+def my_func(my_var1, my_var2, my_var3):
+    my_list = [my_var1, my_var2, my_var3]
+    min_var = min(my_list)
+    my_list.remove(min_var)
+    print(sum(my_list))
+
+
+my_var1 = int(input('Введите число:'))
+my_var2 = int(input('Введите число:'))
+my_var3 = int(input('Введите число:'))
+my_func(my_var1, my_var2, my_var3)
