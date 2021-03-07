@@ -1,0 +1,18 @@
+with open('salary', 'r', encoding='utf-8') as f:
+ salary_dict = {line.split()[0]: float(line.split()[1]) for line in f}
+print(f'Средняя зарплата = {round(sum(salary_dict.values()) / len(salary_dict), 2)}\n'
+f'Сотрудники с зарплатой меньше 20т{[i[0] for i in salary_dict.items() if i[1] < 20000]}')
+
+
+with open('salary.txt', 'r', encoding='utf-8') as f_5:
+    salary_min = []
+sum_salary = 0
+number_workers = 0
+for line in f_5:
+    workers = line.split()
+sum_salary += int(workers[1])
+number_workers += 1
+if int(workers[1]) < 20000:
+    salary_min.append(''.join(workers))
+print('\n'.join(salary_min))
+print(sum_salary / number_workers)
